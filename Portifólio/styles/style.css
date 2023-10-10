@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family= Krona +One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;600&display=swap');
+
+:root{ /*aqui declaramos as variaveis das cores que iremos usar no nosso código*/
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #a52a2a;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; definimos a altura da tela igual a 100% do view port height */
+    box-sizing: border-box; /*limita o tamanho do conteúdo*/
+    background-color: var(--cor-primaria); /*iremos definir a cor de fundo do nosso site*/
+    color: var(--cor-secundaria)/*usado para mudar apenas a cor do texto*/
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%; /*usado para espaçar nossas ancoras para o lado*/
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 15%; /*vertical e horizontal*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*irá dar um espaço entre o conteúdo e a imagem */
+}
+
+.apresentacao__conteudo{
+    width: 615px; /*largura do conteúdo*/
+    display: flex;
+    flex-direction: column; /*faz nosso conteúdo ficar na vertical*/
+    gap: 40px;
+}
+
+.apresentacao__conteudo__resumo{
+    width: 540px;
+    height: 1024px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: rgba(233, 233, 233, 0.20);
+    box-shadow: 4px 4px 6px -6px rgba(255, 255, 255, 0.81) inset, 2px 11px 27px 1px rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(1.5px);
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte-primaria); /*iremos colar de acordo com o que achamos no Google Fonts*/
+}
+
+.titulo-destaque { /*irá mudar a cor da parte do código em html que estiver dentro dessa tag*/
+    color: var(--cor-terciaria); 
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px; /*adiciona espaço entre os botões*/
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px; /*largura*/
+    text-align: center; /*vai alinhar o texto dos botões no centro*/
+    border-radius: 16px; /*raio de arredondamento da borda*/
+    font-size: 24px;
+    font-weight: 600; /*peso da fonte para ficar em negrito*/
+    padding: 21.5px 0px; /*primeiro valor será do eixo vertical, o segundo será do eixo horizontal*/
+    text-decoration: none; /*serve para retirar a decoração do texto, como o sublinhado dos links*/
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    border: 2px solid var(--cor-terciaria); /*o primeiro valor será o tamanho, em seguida o tipo de borda e depois a cor*/
+}
+
+.apresentacao__conteudo__texto__experiencia{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 100%; /*largura*/
+    font-size: 24px;
+    padding: 21.5px 0px; /*primeiro valor será do eixo vertical, o segundo será do eixo horizontal*/
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.minha__foto{
+    margin-left: 100px;
+    max-width: 488px;
+    max-height: 550px;
+    width: auto; /*deixa a imagem com tamanho proporcional*/
+    height: auto;
+    border: 4px var(--cor-terciaria) solid; 
+    border-radius: 16px; /*deixa a borda arredondada*/
+}
+
+.rodape {
+    padding: 24px; /*vai mexer no tamanho da faixa*/
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.logo{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}

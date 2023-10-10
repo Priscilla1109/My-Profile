@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Lang irá definir a língua oficial do elemento que estamos trabalhando.-->
+<head>
+    <meta charset="UTF-8"> <!-- O charset é a codificação do caracteres que irão ser usados. O UTF-8 é o mais usado no mundo-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Serve para utilizar sempre a versão mais recen te do navegador, nesse caso no edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Aqui iremos colocar a largura do dispositivo que irá acessar nossa página-->
+    <title>Portifólio</title> <!--Nome que irá aparecer na aba-->
+    <link rel="stylesheet" href="./styles/style.css"> <!--iremos fazer o link com o css, com o rel iremos dizer qual a relação, e depois colocamos a referÊncia que é o arquivo css-->
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu"><!-- usada para inserir os links que podem ser navegados na página -->
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre Mim</a>
+        </nav>
+    </header>
+    <main class="apresentacao"> <!--esse elemento pai contém os elementos filhos que  queremos posicionar-->
+        <section class="apresentacao__conteudo"> <!--agrupamento de elementos que estão tentando dizer uma coisa só-->
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1> <!--Strong é uma tag que da mais destaque no texto-->
+            <p class="apresentacao__conteudo__texto">Olá! Sou <strong>Priscilla Fonseca</strong>, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <div class="apresentacao__links"> <!--usado de forma semantica para separar o contedúdo visualmente usando o Flexbox-->
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2> 
+                <a class="apresentacao__links__link" href="https://github.com/Priscilla1109">
+                    <img src="./assets/github.png"> <!--como colocamos as imagens dentro de uma pasta, precisamos colocar o diretório para localizar elas-->
+                    GitHub
+                </a>
+                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/priscilla-fonseca-888b79171/">
+                    <img src="./assets/linkedin.png">
+                    Linkedin
+                </a>
+            </div>
+        </section>
+        <img class="minha__foto" src="./assets/minha foto.jpg" alt="Foto Priscilla Fonseca">
+    </main>
+    <footer class="rodape">
+        <p><strong>Desenvolvido por Priscilla Fonseca</strong></p>
+    </footer>
+</body>
+</html>
+
